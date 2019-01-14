@@ -8,7 +8,7 @@
 
 ## Multi-Step Docker Builds
 
-![multi-build](./images/multibuild.png) 
+![multi-build](./images/multibuild.PNG) 
 
 Example: 
 
@@ -26,9 +26,9 @@ COPY --from=builder /app/build /usr/share/nginx/html
 * Running a single container using Elastic Beanstalk
   * Create an environment (Web server environment)
   * Select `Docker` as a platform 
-  * ![ebs](./images/ebs.png) 
+  * ![ebs](./images/ebs.PNG) 
 
 ## **Section 8**: Building Multi-Container Application
 
 * Setting up NGINX as a reverse proxy to access 2 different services
-  * ![nginx](./images/nginx.png) 
+  * ![nginx](./images/nginx.PNG) 

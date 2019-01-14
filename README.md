@@ -31,4 +31,4 @@ COPY --from=builder /app/build /usr/share/nginx/html
 ## **Section 8**: Building Multi-Container Application
 
 * Setting up NGINX as a reverse proxy to access 2 different services
-  * ![nginx](./images/nginx.png)
+  * ![nginx](./images/nginx.png) 

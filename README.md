@@ -317,8 +317,8 @@ COPY --from=builder /app/build /usr/share/nginx/html
 
     * Secret are a type of object that is made for storing secrets: `apiKey`, `ssh key`, `db pw`
     * Imperative in nature
-        * `kubecrl create secret generic ${secret_name} --from-literal key=value`
-        * `kubecrl create secret generic pgpassword --from-literal PGPASSWORD=123`
+        * `kubectl create secret generic ${secret_name} --from-literal key=value`
+        * `kubectl create secret generic pgpassword --from-literal PGPASSWORD=123`
             * Can be `generic`, `docker-registry`, or `tls` (for https)
             * `--from-literal`: We are going to add the secret information into this command
         * `kubectl get secrets`
@@ -368,3 +368,14 @@ COPY --from=builder /app/build /usr/share/nginx/html
     * `nginx.ingress.kubernetes.io/rewrite-target: /`
         * If the URL is `/api`, this rule will remove any thing after the `/`.
         * ![kubernetes42](./images/kubernetes42.PNG) 
+
+## Section 16: Kubernetes Production Deployment
+
+* ![kubernetes43](./images/kubernetes43.PNG)
+
+* `gcloud components update kubectl`
+    * Install and updates kubectl
+
+* ![kubernetes44](./images/kubernetes44.PNG)
+    * Package manager for Kubernetes
+

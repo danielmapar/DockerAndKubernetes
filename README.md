@@ -360,6 +360,7 @@ COPY --from=builder /app/build /usr/share/nginx/html
         * According to the Nginx ingress controller's documentation, it does not route traffic to the associated Service's virtual IP address. Instead it routes directly to the pods' IP addresses, using the endpoints API, for performance reasons and to allow features like session affinity
 
 * ![kubernetes41](./images/kubernetes41.PNG) 
+    * https://kubernetes.github.io/ingress-nginx/deploy/
     * `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml`
     * `minikube addons enable ingress`
 

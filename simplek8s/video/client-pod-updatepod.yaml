@@ -5,8 +5,8 @@ metadata:
   labels:
     component: web
 spec:
-  containers:
+  containers: 
     - name: client
       image: stephengrider/multi-worker
       ports:
-        - containerPort: 9999
+        - containerPort: 3000

@@ -37,6 +37,10 @@ COPY --from=builder /app/build /usr/share/nginx/html
 * Setting up NGINX as a reverse proxy to access 2 different services
   * ![nginx](./images/nginx.PNG) 
 
+## **Section 9**: Dockerizing Multiple Services
+
+* ![env_vars](./images/env_vars.png)
+
 ## **Section 12**: Onwards to Kubernetes
 
 * Kubernetes are similar to docker swarm, and we will use it to deploy a service in multiple containers
